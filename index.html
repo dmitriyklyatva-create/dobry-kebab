@@ -11,7 +11,7 @@
         *{margin:0;padding:0;box-sizing:border-box}
         :root{--o:#ff6b00;--bg:#1a1410;--bg2:#221c15;--bg3:#2a2318;--card:#2a2318;--card2:#342c20;--t:#fff;--tm:#a09080;--g:#4caf50;--wood:linear-gradient(135deg,#2a2318,#342c20)}
         html{scroll-behavior:smooth}
-        body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--t);overflow-x:hidden}
+        body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--t);overflow-x:hidden;background-attachment:fixed;background-image:url('https://dobry-kebab-showcase.lovable.app/assets/hero-kebab-CZWLEW7o.jpg');background-size:cover;background-position:center;background-repeat:no-repeat}
         ::-webkit-scrollbar{width:8px}::-webkit-scrollbar-track{background:var(--bg)}::-webkit-scrollbar-thumb{background:linear-gradient(180deg,var(--o),#c55a00);border-radius:4px}
 
         .grain{position:fixed;inset:0;pointer-events:none;z-index:0;opacity:.03;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E")}
@@ -34,7 +34,7 @@
         .mob-close{position:absolute;top:20px;right:25px;background:none;border:none;color:var(--t);font-size:2rem;cursor:pointer}
 
         .hero{min-height:100vh;display:flex;align-items:center;position:relative;padding:0 5%;overflow:hidden}
-        .hero-bg{position:fixed;inset:0;background:linear-gradient(180deg,rgba(26,20,16,0.4),rgba(26,20,16,0.6) 40%,rgba(26,20,16,0.85) 70%,rgba(26,20,16,0.98)),url('https://dobry-kebab-showcase.lovable.app/assets/hero-kebab-CZWLEW7o.jpg') center/cover no-repeat;z-index:0}
+        .hero-bg{position:absolute;inset:0;background:linear-gradient(180deg,rgba(26,20,16,0.3),rgba(26,20,16,0.95));z-index:0}
         .hero-content{position:relative;z-index:2;max-width:650px}
         .badge{display:inline-flex;align-items:center;gap:10px;background:rgba(255,107,0,0.15);border:1px solid rgba(255,107,0,0.3);padding:10px 22px;border-radius:50px;font-size:.9rem;color:var(--o);margin-bottom:25px}
         .badge .s{color:#ffd700}
@@ -51,7 +51,7 @@
         .st h3{font-family:'Bebas Neue',sans-serif;font-size:2.2rem;color:var(--o)}
         .st p{color:var(--tm);font-size:.85rem}
 
-        .features{padding:80px 5%;display:grid;grid-template-columns:repeat(3,1fr);gap:25px;max-width:1300px;margin:0 auto;position:relative;z-index:1;background:rgba(26,20,16,0.7);border-radius:20px}
+        .features{padding:80px 5%;display:grid;grid-template-columns:repeat(3,1fr);gap:25px;max-width:1300px;margin:0 auto;position:relative;z-index:1;background:rgba(26,20,16,0.65);border-radius:20px}
         .feat{background:var(--card);padding:35px 25px;border-radius:18px;text-align:center;border:1px solid rgba(255,255,255,0.04);transition:all .4s;position:relative;overflow:hidden}
         .feat::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:var(--o);opacity:0;transition:opacity .4s}
         .feat:hover::before{opacity:1}
@@ -65,7 +65,7 @@
         .sec-hdr h2{font-family:'Bebas Neue',sans-serif;font-size:clamp(2.2rem,5vw,3.5rem);letter-spacing:2px}
         .sec-hdr h2 b{color:var(--o)}
 
-        .menu-sec{padding:80px 5%;background:rgba(26,20,16,0.85);position:relative;z-index:1}
+        .menu-sec{padding:80px 5%;background:rgba(26,20,16,0.75);position:relative;z-index:1}
         .mgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:22px;max-width:1300px;margin:0 auto}
         .mcard{background:var(--card);border-radius:18px;overflow:hidden;border:1px solid rgba(255,255,255,0.04);transition:all .4s;position:relative}
         .mcard:hover{transform:translateY(-8px);box-shadow:0 15px 45px rgba(0,0,0,0.5);border-color:rgba(255,107,0,0.2)}
@@ -79,7 +79,7 @@
         .mcard-foot{display:flex;justify-content:space-between;align-items:center}
         .pr{font-family:'Bebas Neue',sans-serif;font-size:1.6rem;color:var(--o)}
 
-        .fmenu{padding:80px 5%;max-width:1100px;margin:0 auto;position:relative;z-index:1;background:rgba(26,20,16,0.85);border-radius:20px}
+        .fmenu{padding:80px 5%;max-width:1100px;margin:0 auto;position:relative;z-index:1;background:rgba(26,20,16,0.75);border-radius:20px}
         .mcat{margin-bottom:40px}
         .mcat h3{font-family:'Bebas Neue',sans-serif;font-size:1.6rem;color:var(--o);border-bottom:2px solid rgba(255,107,0,0.15);padding-bottom:12px;margin-bottom:20px;display:flex;align-items:center;gap:12px}
         .mlist{display:grid;gap:12px}
@@ -89,7 +89,7 @@
         .mi p{color:var(--tm);font-size:.85rem}
         .mip{font-family:'Bebas Neue',sans-serif;font-size:1.4rem;color:var(--o)}
 
-        .order-sec{padding:80px 5%;position:relative;z-index:1;background:rgba(26,20,16,0.7)}
+        .order-sec{padding:80px 5%;position:relative;z-index:1;background:rgba(26,20,16,0.65)}
         .order-box{max-width:750px;margin:0 auto;background:var(--card);border-radius:25px;padding:50px;border:1px solid rgba(255,107,0,0.2);text-align:center;position:relative;overflow:hidden}
         .order-box h2{font-family:'Bebas Neue',sans-serif;font-size:2.8rem;margin-bottom:15px}
         .order-box h2 b{color:var(--o)}
@@ -101,7 +101,7 @@
         .obtn-p{background:var(--o);color:var(--bg)}
         .obtn-p:hover{transform:translateY(-3px);box-shadow:0 8px 25px rgba(255,107,0,0.4)}
 
-        .rev-sec{padding:80px 5%;background:rgba(26,20,16,0.85);position:relative;z-index:1}
+        .rev-sec{padding:80px 5%;background:rgba(26,20,16,0.75);position:relative;z-index:1}
         .rgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:22px;max-width:1300px;margin:0 auto}
         .rcard{background:var(--card);padding:30px;border-radius:18px;border:1px solid rgba(255,255,255,0.04);transition:all .4s;position:relative}
         .rcard::before{content:'"';position:absolute;top:12px;right:20px;font-size:5rem;color:rgba(255,107,0,0.08);font-family:serif;line-height:1}
@@ -113,13 +113,13 @@
         .rauth-info h4{font-size:.95rem;margin-bottom:2px}
         .rauth-info p{color:var(--tm);font-size:.8rem}
 
-        .cta{padding:100px 5%;text-align:center;position:relative;z-index:1;overflow:hidden;background:rgba(26,20,16,0.85)}
+        .cta{padding:100px 5%;text-align:center;position:relative;z-index:1;overflow:hidden;background:rgba(26,20,16,0.75)}
         .cta h2{font-family:'Bebas Neue',sans-serif;font-size:clamp(2.5rem,5vw,4rem);margin-bottom:20px;letter-spacing:2px}
         .cta h2 b{color:var(--o)}
         .cta>p{color:var(--tm);font-size:1.1rem;margin-bottom:35px;max-width:550px;margin-left:auto;margin-right:auto}
         .cta-btns{display:flex;justify-content:center;gap:18px;flex-wrap:wrap}
 
-        .contact{padding:80px 5%;max-width:1300px;margin:0 auto;position:relative;z-index:1;background:rgba(26,20,16,0.85);border-radius:20px}
+        .contact{padding:80px 5%;max-width:1300px;margin:0 auto;position:relative;z-index:1;background:rgba(26,20,16,0.75);border-radius:20px}
         .cgrid{display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:start}
         .cinfo{display:grid;gap:20px}
         .ccard{background:var(--card);padding:25px;border-radius:18px;border:1px solid rgba(255,255,255,0.04);display:flex;gap:18px;transition:all .3s}
@@ -132,7 +132,7 @@
         .map{border-radius:18px;overflow:hidden;height:380px;border:1px solid rgba(255,255,255,0.06)}
         .map iframe{width:100%;height:100%;border:none;filter:brightness(0.85) contrast(1.1)}
 
-        footer{background:rgba(21,16,16,0.95);padding:50px 5% 25px;border-top:1px solid rgba(255,107,0,0.08);position:relative;z-index:1}
+        footer{background:rgba(21,16,16,0.9);padding:50px 5% 25px;border-top:1px solid rgba(255,107,0,0.08);position:relative;z-index:1}
         .f-content{max-width:1300px;margin:0 auto;display:grid;grid-template-columns:2fr 1fr 1fr;gap:50px;margin-bottom:40px}
         .f-brand h3{font-family:'Bebas Neue',sans-serif;font-size:1.8rem;color:var(--o);margin-bottom:12px}
         .f-brand p{color:var(--tm);line-height:1.6;font-size:.9rem}
